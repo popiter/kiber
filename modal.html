@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<button id="modal-call">
+		Вызвать модальное окно
+	</button>
+	<button id="modal-call2">
+		Вызвать модальное окно
+	</button>
+	<button id="modal-call3">
+		Вызвать модальное окно
+	</button>
+	<button id="modal-call4">
+		Вызвать модальное окно
+	</button>
+	<!--Ряд кнопок-->
+	<div id="modal-window2">
+		<div class="modal-title modal-window-two">
+			<p>Письмо с подтверждением подписки выслано на почту.</p>
+			<button class="modal__btn arcticmodal-close">Отлично</button>
+		</div>
+	</div>
+	<div id="modal-window3">
+		<div class="modal-title modal-window-three">
+			<p>
+				Ваша почта <span class="modal-title-text">mymail@gmail.com</span> подтверждена!
+				<img src="img/modal/okIcon.png" alt="okIcon">
+			</p>
+			<button class="modal__btn arcticmodal-close">Продолжить</button>
+		</div>
+	</div>
+	<div id="modal-window4">
+		<div class="modal-title modal-window-fore">
+			<p>
+				У нас появился канал в <span class="modal-title-text">telegram</span>,
+				c самыми актуальными новостями и акциями
+				по черной пятнице. И без рекламы!
+			</p>
+			<button class="modal__btn arcticmodal-close">Ок, заглянем</button>
+		</div>
+	</div>
+	<!--Ряд окон с оболочкой!-->
+	<div id="modal-window">
+		<div class="modal-window-one">
+			<button id="modal-close" class="arcticmodal-close"><img src="img/modal/modalClose.svg" alt="close-modal"
+					class="modal-close"></button>
+			<h3 class="modal-title">
+				<span class="modal-title-text">
+					Промокод:
+				</span>
+				-10% на спортивную одежду и обувь по коду
+			</h3>
+			<p class="modal-subtitle">
+				Акция работает только при заказе трёх любых<br>товаров без скидки. Действует ограниченное<br>количество
+				раз.
+			</p>
+			<div class="modal_promo">
+				<form class="modal-promo-form">
+					<input type="text" id="modal-promo-text" value="EFRrgfd" required>
+					<button id="modal-copy"></button>
+				</form>
+			</div>
+			<div id="modal-btn-shop"><a href="#">Перейти в магазин</a></div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
