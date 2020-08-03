@@ -29,6 +29,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "TT Norms Pro";
+	color: #333;
 }
 
 .container {
@@ -37,13 +38,26 @@
 }
 
 body {
-	background-color: #121212;
+	background-color: #fff;
 }
 
 /* header */
+.header__circle {
+	background-color: #ffcdd5;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	right: -16%;
+	top: -25%;
+	z-index: -1;
+	border-radius: 50%;
+}
+
+.header {
+	position: relative;
+}
+
 .header__home__page {
-	background: url(../img/bcImg.svg) top right no-repeat;
-	background-size: contain;
 	margin-bottom: 138px;
 }
 
@@ -51,7 +65,6 @@ body {
 	display: flex;
 	align-items: center;
 	padding: 17px 70px 15px 70px;
-	border-bottom: 1px solid rgba(249, 249, 249, 0.2);
 }
 
 .header__logo {
@@ -83,21 +96,21 @@ body {
 	font-size: 14px;
 	line-height: 30px;
 	letter-spacing: 0.6px;
-	color: #ffb229;
+	color: #5c50f2;
 	text-transform: uppercase;
 	margin-right: 32px;
 	text-decoration: none;
 	font-weight: 700;
 }
 
-.block-links__item:hover {
+/* .block-links__item:hover {
 	color: #fff;
 	transition: 0.2s;
-}
+} */
 
 .block-soc__description {
 	font-size: 15px;
-	color: #fff;
+	color: #333;
 	margin-right: 10px;
 	margin-bottom: 5px;
 }
@@ -1099,6 +1112,15 @@ body {
 	border-radius: 3px;
 }
 
+/*media*/
+
+@media screen and (max-width: 1140px) {
+	.header__circle {
+		width: 600px;
+		height: 600px;
+	}
+}
+
 @media screen and (max-width: 1071px) {
 	.block-soc__description {
 		display: none;
@@ -1164,8 +1186,9 @@ body {
 }
 
 @media screen and (max-width: 974px) {
-	.header__home__page {
-		background: url(../img/bcImg2.svg) top right no-repeat;
+	.header__circle {
+		width: 500px;
+		height: 500px;
 	}
 
 	.footer {
@@ -1220,6 +1243,11 @@ body {
 }
 
 @media screen and (max-width: 770px) {
+	.header__circle {
+		width: 400px;
+		height: 400px;
+	}
+
 	.header {
 		margin-bottom: 76px;
 	}
@@ -1701,12 +1729,23 @@ body {
 }
 
 @media screen and (max-width: 470px) {
-	.open {
-		padding-left: 25px;
+	.header__circle {
+		width: 350px;
+		height: 350px;
+		right: -35%;
+		top: -35%;
 	}
 
-	.header__home__page {
-		background: url(../img/bcImg3.svg) top right no-repeat;
+	.header__logo {
+		margin-right: 18px;
+
+		img {
+			width: 230px;
+		}
+	}
+
+	.open {
+		padding-left: 25px;
 	}
 
 	.items__block {
