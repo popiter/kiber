@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="63" height="58" viewBox="0 0 63 58">
     <g fill="none" fill-rule="evenodd" transform="rotate(-33 50.444 12.372)">
-        <path stroke="#FFB229" stroke-linejoin="round" stroke-width="2.25" d="M51 9.927c-.417-.086-.849-.131-1.291-.131-3.566 0-6.456 2.924-6.456 6.53 0 3.607 2.89 6.531 6.456 6.531.442 0 .874-.045 1.291-.13V32H0v-9.273c.417.085.849.13 1.291.13 3.566 0 6.456-2.924 6.456-6.53 0-3.607-2.89-6.531-6.456-6.531-.442 0-.874.045-1.291.13V0h51v9.927z"/>
-        <rect width="2.25" height="4.571" x="15.75" y="27.429" fill="#FFB229" rx="1.125"/>
-        <rect width="2.25" height="12.19" x="15.75" y="12.19" fill="#FFB229" rx="1.125"/>
-        <rect width="2.25" height="9.143" x="15.75" fill="#FFB229" rx="1.125"/>
-        <ellipse cx="27.375" cy="11.048" fill="#FFB229" rx="1.875" ry="1.905"/>
-        <ellipse cx="36.375" cy="20.19" fill="#FFB229" rx="1.875" ry="1.905"/>
-        <path stroke="#FFB229" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M26.625 20.952l9.75-9.904"/>
+        <path stroke="#FFF" stroke-linejoin="round" stroke-width="2.25" d="M51 9.927c-.417-.086-.849-.131-1.291-.131-3.566 0-6.456 2.924-6.456 6.53 0 3.607 2.89 6.531 6.456 6.531.442 0 .874-.045 1.291-.13V32H0v-9.273c.417.085.849.13 1.291.13 3.566 0 6.456-2.924 6.456-6.53 0-3.607-2.89-6.531-6.456-6.531-.442 0-.874.045-1.291.13V0h51v9.927z"/>
+        <rect width="2.25" height="4.571" x="15.75" y="27.429" fill="#FFF" rx="1.125"/>
+        <rect width="2.25" height="12.19" x="15.75" y="12.19" fill="#FFF" rx="1.125"/>
+        <rect width="2.25" height="9.143" x="15.75" fill="#FFF" rx="1.125"/>
+        <ellipse cx="27.375" cy="11.048" fill="#FFF" rx="1.875" ry="1.905"/>
+        <ellipse cx="36.375" cy="20.19" fill="#FFF" rx="1.875" ry="1.905"/>
+        <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M26.625 20.952l9.75-9.904"/>
     </g>
 </svg>

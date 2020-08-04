@@ -227,22 +227,20 @@ window.addEventListener("optimizedResize", function () {
 });
 
 function tracking() {
-	if (
-		window.innerWidth < 770 &&
-		document.querySelector(".partner__shop__items27-33")
-	) {
+	if (window.innerWidth < 770 && document.querySelector(".partner__shop__items27-33")) {
 		document.querySelector(".partner__shop__items27-33").classList.add("content__parther");
+		document.querySelector(".partner__shop__items21-26").classList.add("content__parther");
 	} else if (document.querySelector(".partner__shop__items27-33")) {
 		document.querySelector(".partner__shop__items27-33").classList.remove("content__parther");
+		document.querySelector(".partner__shop__items21-26").classList.remove("content__parther");
 	}
 
-	if (
-		window.innerWidth > 770 &&
-		document.querySelector(".partner__shop__items27-33")
-	) {
+	if (window.innerWidth > 770 && document.querySelector(".partner__shop__items27-33")) {
 		document.querySelector(".partner__shop__items27-33").style.display = "flex";
+		document.querySelector(".partner__shop__items21-26").style.display = "flex";
 	} else if (document.querySelector(".partner__shop__items27-33")) {
 		document.querySelector(".partner__shop__items27-33").style.display = "none";
+		document.querySelector(".partner__shop__items21-26").style.display = "none";
 	}
 
 	if (window.innerWidth < 470 && document.querySelector(".servise__mb")) {
@@ -381,7 +379,9 @@ function openModal() {
 		closeOnEsc: true,
 		closeOnOverlayClick: true,
 		overlay: {
-			css: {},
+			css: {
+				backgroundColor: '#ffcdd5'
+			},
 		},
 	});
 }
@@ -391,7 +391,9 @@ function openModal2() {
 		closeOnEsc: true,
 		closeOnOverlayClick: true,
 		overlay: {
-			css: {},
+			css: {
+				backgroundColor: '#ffcdd5'
+			},
 		},
 	});
 }
@@ -401,7 +403,9 @@ function openModal3() {
 		closeOnEsc: true,
 		closeOnOverlayClick: true,
 		overlay: {
-			css: {},
+			css: {
+				backgroundColor: '#ffcdd5'
+			},
 		},
 	});
 }
@@ -411,7 +415,9 @@ function openModal4() {
 		closeOnEsc: true,
 		closeOnOverlayClick: true,
 		overlay: {
-			css: {},
+			css: {
+				backgroundColor: '#ffcdd5'
+			},
 		},
 	});
 }
