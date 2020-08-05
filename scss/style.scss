@@ -210,13 +210,13 @@ body {
 		color: #5c50f2;
 	}
 
-	.input_check + .check__text {
+	.input_check+.check__text {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 
-	.input_check + .check__text::before {
+	.input_check+.check__text::before {
 		content: "";
 		display: inline-block;
 		width: 32px;
@@ -228,7 +228,7 @@ body {
 		background-color: #5c50f2;
 	}
 
-	.input_check:checked + .check__text::before {
+	.input_check:checked+.check__text::before {
 		background: url(../img/icon/check.svg) center center no-repeat;
 		background-color: #5c50f2;
 	}
@@ -730,6 +730,8 @@ body {
 	margin-bottom: 100px;
 
 	img {
+		padding-top: 76px;
+		margin-bottom: 72px;
 		width: 75%;
 	}
 
@@ -1118,6 +1120,20 @@ body {
 	border-radius: 3px;
 }
 
+/*city*/
+
+.main__small__circle {
+	background: radial-gradient(circle closest-corner at 10% 10%, #ffcdd5 50%, transparent 50%);
+	background-position: 1580px 630px;
+	background-repeat: no-repeat;
+}
+
+.main__circle {
+	background: radial-gradient(circle closest-corner at 80% 24%, #ffdc40 62%, transparent 50%);
+	background-position: 210px 900px;
+	background-repeat: no-repeat;
+}
+
 /*media*/
 @media screen and (max-width: 1800px) {
 	.header__home__page {
@@ -1126,6 +1142,10 @@ body {
 
 	.info__circle {
 		background-position: 1000px -300px;
+	}
+
+	.main__small__circle {
+		background-position: 1500px 630px;
 	}
 }
 
@@ -1140,6 +1160,10 @@ body {
 
 	.info__circle {
 		background-position: 900px -300px;
+	}
+
+	.main__small__circle {
+		background-position: 1350px 630px;
 	}
 }
 
@@ -1163,6 +1187,26 @@ body {
 	.client__circle {
 		background-position: -190px 480px;
 	}
+
+	.main__small__circle {
+		background-position: 1280px 630px;
+	}
+
+	.main__circle {
+		background-position: 210px 870px;
+	}
+}
+
+@media screen and (max-width: 1380px) {
+	.main__small__circle {
+		background-position: 1150px 630px;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.main__small__circle {
+		background-position: 1050px 630px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -1176,6 +1220,10 @@ body {
 
 	.info__circle {
 		background-position: 450px -400px;
+	}
+
+	.main__small__circle {
+		background-position: 980px 630px;
 	}
 }
 
@@ -1194,6 +1242,12 @@ body {
 
 	.client__circle {
 		background-position: -260px 480px;
+	}
+
+	.main__small__circle {
+		background: radial-gradient(circle closest-corner at 15% 10%, #ffcdd5 50%, transparent 50%);
+		background-position: 900px 630px;
+		background-repeat: no-repeat;
 	}
 
 	.header_main__img {
@@ -1271,6 +1325,10 @@ body {
 }
 
 @media screen and (max-width: 974px) {
+	.main__small__circle {
+		background-position: 800px 630px;
+	}
+
 	.header_main__img {
 		width: 233px;
 		right: -8%;
@@ -1317,6 +1375,10 @@ body {
 		background-repeat: no-repeat;
 	}
 
+	.main__small__circle {
+		background-position: 700px 630px;
+	}
+
 	.items__block6,
 	.items__block12,
 	.items__block19,
@@ -1341,9 +1403,21 @@ body {
 	}
 }
 
+@media screen and (max-width: 850px) {
+	.main__small__circle {
+		background: radial-gradient(circle closest-corner at 20% 10%, #ffcdd5 50%, transparent 50%);
+		background-position: 700px 630px;
+		background-repeat: no-repeat;
+	}
+}
+
 @media screen and (max-width: 770px) {
 	.header__home__page {
 		background-position: 310px -60px;
+	}
+
+	.main__small__circle {
+		background-position: 650px 630px;
 	}
 
 	.info__circle {
@@ -1356,6 +1430,10 @@ body {
 		background: radial-gradient(circle closest-corner at 30% 25%, #ffcdd5 50%, transparent 50%);
 		background-position: -240px 270px;
 		background-repeat: no-repeat;
+	}
+
+	.block-links__item {
+		margin-right: 10px;
 	}
 
 	.mailing__cheked__circle {
@@ -1534,6 +1612,14 @@ body {
 
 @media screen and (max-width: 760px) {
 	.client__circle {
+		background: none;
+	}
+
+	.main__small__circle {
+		background: none;
+	}
+
+	.main__circle {
 		background: none;
 	}
 
