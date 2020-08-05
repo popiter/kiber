@@ -29,7 +29,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "TT Norms Pro";
-	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: inherit;
 }
 
 .container {
@@ -222,13 +222,13 @@ body {
 		color: #5c50f2;
 	}
 
-	.input_check + .check__text {
+	.input_check+.check__text {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 
-	.input_check + .check__text::before {
+	.input_check+.check__text::before {
 		content: "";
 		display: inline-block;
 		width: 32px;
@@ -241,7 +241,7 @@ body {
 		border: 2px solid #ffcdd5;
 	}
 
-	.input_check:checked + .check__text::before {
+	.input_check:checked+.check__text::before {
 		background: url(../img/icon/check.svg) center center no-repeat;
 		background-color: #5c50f2;
 		border: 2px solid #4b40d5;
