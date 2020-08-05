@@ -651,6 +651,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.client__circle {
+  background: radial-gradient(circle closest-corner at 20% 25%, #ffdc40 50%, transparent 50%);
+  background-position: -80px 480px;
+  background-repeat: no-repeat;
+}
+
 .page__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1284,6 +1290,9 @@ body {
     background-position: 660px -400px;
     background-repeat: no-repeat;
   }
+  .client__circle {
+    background-position: -190px 480px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1308,6 +1317,9 @@ body {
     background: radial-gradient(circle closest-corner at 65% 20%, #ffcdd5 70%, transparent 50%);
     background-position: 350px -250px;
     background-repeat: no-repeat;
+  }
+  .client__circle {
+    background-position: -260px 480px;
   }
   .header_main__img {
     display: none;
@@ -1597,6 +1609,9 @@ body {
 }
 
 @media screen and (max-width: 760px) {
+  .client__circle {
+    background: none;
+  }
   .items__block {
     width: 100px;
     height: 100px;
