@@ -40,6 +40,12 @@ body {
 	background-color: #fff;
 }
 
+.header__block-soc__icon:hover {
+	circle {
+		fill: #4b40d5;
+	}
+}
+
 /* header */
 .header:not(.header__home__page):not(.header__sub-page) {
 	margin-bottom: 138px;
@@ -94,10 +100,10 @@ body {
 	font-weight: 700;
 }
 
-/* .block-links__item:hover {
-	color: #fff;
+.block-links__item:hover {
+	color: #4b40d5;
 	transition: 0.2s;
-} */
+}
 
 .block-soc__description {
 	font-size: 15px;
@@ -150,11 +156,16 @@ body {
 	color: #afafaf;
 	border: 2px solid #ffcdd5;
 	outline: 0;
-	padding: 8px 103px 12px 24px;
+	padding: 8px 12px 12px 24px;
 	margin-right: 16px;
 	font-size: 16px;
 	line-height: 30px;
 	border-radius: 3px;
+
+	&:focus {
+		color: #333;
+		border: 2px solid #4b40d5;
+	}
 }
 
 .email::placeholder {
@@ -176,10 +187,10 @@ body {
 	cursor: pointer;
 }
 
-/* .submit:hover {
-	background-color: #fff;
+.submit:hover {
+	background-color: #4b40d5;
 	transition: 0.2s;
-} */
+}
 
 .mailing__cheked {
 	position: relative;
@@ -210,13 +221,13 @@ body {
 		color: #5c50f2;
 	}
 
-	.input_check+.check__text {
+	.input_check + .check__text {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 
-	.input_check+.check__text::before {
+	.input_check + .check__text::before {
 		content: "";
 		display: inline-block;
 		width: 32px;
@@ -225,12 +236,15 @@ body {
 		flex-grow: 0;
 		border-radius: 3px;
 		margin-right: 16px;
-		background-color: #5c50f2;
+		background-color: inherit;
+		border: 2px solid #ffcdd5;
 	}
 
-	.input_check:checked+.check__text::before {
+	.input_check:checked + .check__text::before {
 		background: url(../img/icon/check.svg) center center no-repeat;
 		background-color: #5c50f2;
+		border: 2px solid #4b40d5;
+		transition: all 0.2s;
 	}
 }
 
@@ -423,10 +437,10 @@ body {
 	border-radius: 3px;
 }
 
-/* .categories__submit:hover {
-	background-color: #444;
+.categories__submit:hover {
+	background-color: #4b40d5;
 	transition: all 0.2s;
-} */
+}
 
 /* city */
 .city {
@@ -789,10 +803,10 @@ body {
 		color: #fff;
 		background-color: #5c50f2;
 
-		/* &:hover {
-			background-color: #fff;
+		&:hover {
+			background-color: #4b40d5;
 			transition: all 0.2s;
-		} */
+		}
 	}
 }
 
@@ -846,11 +860,6 @@ body {
 	width: 232px;
 	background-color: #5c50f2;
 	cursor: pointer;
-
-	/* &:hover {
-		background-color: #444;
-		transition: all 0.2s;
-	} */
 }
 
 .corner {
@@ -936,6 +945,11 @@ body {
 	cursor: pointer;
 	z-index: 99;
 	display: none;
+
+	&:hover {
+		background-color: #e7e7e7;
+		transition: all 0.2s;
+	}
 }
 
 /* more btn */
@@ -1039,10 +1053,10 @@ body {
 	background-color: #5c50f2;
 	text-transform: uppercase;
 
-	/* &:hover {
-		background-color: #fff;
+	&:hover {
+		background-color: #4b40d5;
 		transition: all 0.2s;
-	} */
+	}
 }
 
 #modal-window2 {
@@ -1086,10 +1100,10 @@ body {
 	border-radius: 3px;
 	cursor: pointer;
 
-	/* &:hover {
-		background-color: #fff;
+	&:hover {
+		background-color: #4b40d5;
 		transition: all 0.2s;
-	} */
+	}
 }
 
 #modal-window3 {
@@ -2321,6 +2335,13 @@ body {
 	.error404 {
 		padding-top: 7%;
 		margin-bottom: 19%;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.promo__button:hover {
+		background-color: #4b40d5;
+		transition: all 0.2s;
 	}
 }
 
