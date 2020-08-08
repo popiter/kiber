@@ -516,11 +516,6 @@ body {
 		margin-right: 40px;
 	}
 
-	/* .footer__media:hover {
-		color: #fff;
-		transition: 0.2s;
-	} */
-
 	a {
 		margin-right: 10px;
 	}
@@ -1392,7 +1387,7 @@ body {
 
 	.footer__mediaTB {
 		display: block;
-		padding: 0 25px;
+		padding: 0 25px 0 0;
 		align-items: start;
 
 		h3 {
