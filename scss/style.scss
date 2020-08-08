@@ -154,7 +154,6 @@ body {
 	width: 280px;
 	height: 50px;
 	border: none;
-	color: #afafaf;
 	border: 2px solid #ffcdd5;
 	outline: 0;
 	padding: 8px 12px 12px 24px;
@@ -162,10 +161,16 @@ body {
 	font-size: 16px;
 	line-height: 30px;
 	border-radius: 3px;
+	transition: all 0.2s;
 
 	&:focus {
 		color: #333;
 		border: 2px solid #4b40d5;
+		transition: all 0.2s;
+	}
+
+	&::placeholder {
+		color: #afafaf;
 	}
 }
 
@@ -222,13 +227,13 @@ body {
 		color: #5c50f2;
 	}
 
-	.input_check+.check__text {
+	.input_check + .check__text {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 
-	.input_check+.check__text::before {
+	.input_check + .check__text::before {
 		content: "";
 		display: inline-block;
 		width: 32px;
@@ -241,11 +246,10 @@ body {
 		border: 2px solid #ffcdd5;
 	}
 
-	.input_check:checked+.check__text::before {
+	.input_check:checked + .check__text::before {
 		background: url(../img/icon/check.svg) center center no-repeat;
 		background-color: #5c50f2;
 		border: 2px solid #4b40d5;
-		transition: all 0.2s;
 	}
 }
 
@@ -255,18 +259,22 @@ body {
 	height: 128px;
 	background-color: #ffdc40;
 	border-radius: 50%;
-	right: -45%;
+	right: -75%;
 	top: 15%;
 }
 
 .header_main__img {
 	position: absolute;
-	right: 7%;
-	top: 6%;
+	right: 3%;
+	top: 5%;
+	width: 583px;
+	height: 645px;
 }
 
 .header_main__imgTB {
 	display: none;
+	width: 233px;
+	height: 362px;
 }
 
 /* partner shop */
@@ -521,6 +529,10 @@ body {
 		margin-right: 40px;
 		text-decoration: none;
 		color: #5c50f2;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -649,6 +661,7 @@ body {
 		background-color: inherit;
 		color: #fff;
 		cursor: pointer;
+		outline: none;
 
 		&:hover {
 			color: #ffdc00;
@@ -763,6 +776,10 @@ body {
 
 		a {
 			color: #5c50f2;
+
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 }
@@ -1179,6 +1196,11 @@ body {
 
 	.main__small__circle {
 		background-position: 1350px 630px;
+	}
+
+	.mailing__cheked__circle {
+		right: -45%;
+		top: 15%;
 	}
 }
 

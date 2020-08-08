@@ -173,7 +173,6 @@ body {
   width: 280px;
   height: 50px;
   border: none;
-  color: #afafaf;
   border: 2px solid #ffcdd5;
   outline: 0;
   padding: 8px 12px 12px 24px;
@@ -181,11 +180,31 @@ body {
   font-size: 16px;
   line-height: 30px;
   border-radius: 3px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .email:focus {
   color: #333;
   border: 2px solid #4b40d5;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.email::-webkit-input-placeholder {
+  color: #afafaf;
+}
+
+.email:-ms-input-placeholder {
+  color: #afafaf;
+}
+
+.email::-ms-input-placeholder {
+  color: #afafaf;
+}
+
+.email::placeholder {
+  color: #afafaf;
 }
 
 .email::-webkit-input-placeholder {
@@ -291,8 +310,6 @@ body {
   background: url(../img/icon/check.svg) center center no-repeat;
   background-color: #5c50f2;
   border: 2px solid #4b40d5;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 .mailing__cheked__circle {
@@ -301,18 +318,22 @@ body {
   height: 128px;
   background-color: #ffdc40;
   border-radius: 50%;
-  right: -45%;
+  right: -75%;
   top: 15%;
 }
 
 .header_main__img {
   position: absolute;
-  right: 7%;
-  top: 6%;
+  right: 3%;
+  top: 5%;
+  width: 583px;
+  height: 645px;
 }
 
 .header_main__imgTB {
   display: none;
+  width: 233px;
+  height: 362px;
 }
 
 /* partner shop */
@@ -616,6 +637,10 @@ body {
   color: #5c50f2;
 }
 
+.footer__info .footer__email:hover {
+  text-decoration: underline;
+}
+
 .footer__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -772,6 +797,7 @@ body {
   background-color: inherit;
   color: #fff;
   cursor: pointer;
+  outline: none;
 }
 
 .shop__filter__letter .letter:hover {
@@ -896,6 +922,10 @@ body {
 
 .error404 p a {
   color: #5c50f2;
+}
+
+.error404 p a:hover {
+  text-decoration: none;
 }
 
 /* shop Brand */
@@ -1322,6 +1352,10 @@ body {
   }
   .main__small__circle {
     background-position: 1350px 630px;
+  }
+  .mailing__cheked__circle {
+    right: -45%;
+    top: 15%;
   }
 }
 
